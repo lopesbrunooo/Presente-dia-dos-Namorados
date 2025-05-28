@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presente Dia dos Namorados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="heart" class="heart">❤️</div>
+        <div id="letter" class="letter hidden">
+            <h2>Meu Amor ❤️</h2>
+            <div class="carousel">
+                <button class="carousel-prev">❮</button>
+                <div class="carousel-inner">
+                    <img src="imagem.namoro1.jpg" class="carousel-item active" alt="Foto do casal 1">
+                    <img src="imagem.namoro2.jpg" class="carousel-item" alt="Foto do casal 2">
+                    <img src="imagem.namoro3.jpg" class="carousel-item" alt="Foto do casal 3">
+                </div>
+                <button class="carousel-next">❯</button>
+            </div>
+            <button class="music-control play" id="music-control" title="Tocar/Pausar música" aria-label="Tocar ou pausar música">▶</button>
+            <iframe id="music-player" width="0" height="0" src="https://www.youtube.com/embed/fukGbiPuBjU?enablejsapi=1&loop=1&playlist=fukGbiPuBjU" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            <p>
+                Giulianne, a MINHA Princesa:
+                Neste Dia dos Namorados, quero te dizer o quanto você é especial para mim. 
+                Cada momento ao seu lado é como um sonho do qual nunca quero acordar. 
+                Sua risada ilumina meus dias, e seu carinho faz meu coração bater mais forte. 
+                Obrigado por ser minha companheira, minha melhor amiga e meu maior amor. 
+                Eu te amo hoje e sempre! ❤️
+            </p>
+            <div id="love-timer">
+                Eu amo você a: <span id="timer">0 dias, 0 horas, 0 minutos, 0 segundos</span>
+            </div>
+            <button onclick="closeLetter()">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
